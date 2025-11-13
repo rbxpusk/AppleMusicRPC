@@ -1,0 +1,56 @@
+APPLE MUSIC DISCORD RPC
+=======================
+
+SETUP:
+1. Go to https://discord.com/developers/applications
+2. Create a new application
+3. Copy your Application ID
+4. Open .env in a text editor
+5. Replace YOUR_APP_ID with your Application ID
+6. Save and close
+7. Run AppleMusicRPC.exe
+8. Play music in Apple Music
+
+FEATURES:
+- Real-time track display
+- Animated GIF support
+- Automatic album artwork
+- Playback progress
+- Auto-start on login
+
+IMAGE OPTIONS:
+
+Album Artwork (Recommended):
+  Set USE_ALBUM_ARTWORK=true in .env
+  Automatically shows album covers
+
+Animated GIF:
+  Set USE_ALBUM_ARTWORK=false
+  Set GIF_URL=https://i.imgur.com/yourfile.gif
+  Use any GIF from Imgur, Tenor, Giphy
+
+Static Image:
+  Set USE_ALBUM_ARTWORK=false
+  Leave GIF_URL empty
+  Upload image to Discord Developer Portal
+
+AUTO-START:
+  Run install-startup.bat to start with Windows
+  Run uninstall-startup.bat to remove
+
+TROUBLESHOOTING:
+
+No status showing?
+  - Use Discord desktop app, not browser
+  - Enable "Display current activity" in Discord Settings
+  - Verify your Application ID is correct
+
+Music not detected?
+  - Make sure Apple Music is running and playing
+  - Try restarting AppleMusicRPC.exe
+
+Album artwork not loading?
+  - Check internet connection
+  - Some songs may not have artwork
+
+For more help, see README.md

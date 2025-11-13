@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyName>AppleMusicRPC</AssemblyName>
+    <Version>2.0.0</Version>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="temp-customrpc\**" />
+    <Compile Remove="node_modules\**" />
+    <Compile Remove="release\**" />
+    <Compile Remove="dist\**" />
+    <EmbeddedResource Remove="temp-customrpc\**" />
+    <EmbeddedResource Remove="node_modules\**" />
+    <EmbeddedResource Remove="release\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <None Remove="temp-customrpc\**" />
+    <None Remove="node_modules\**" />
+    <None Remove="release\**" />
+    <None Remove="dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update=".env">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

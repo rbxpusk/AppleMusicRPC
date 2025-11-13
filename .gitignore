@@ -1,4 +1,30 @@
-node_modules/
-*.log
-dist/
-release/
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# User settings
+.env
+release/.env
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Temp files
+*.tmp
+*.temp
+*.ps1.tmp
+gif-frames/
+
+# Release folder (except example files)
+release/*
+!release/.env.example
+!release/README.md
+!release/INSTRUCTIONS.txt
+!release/LICENSE
+!release/*.bat
